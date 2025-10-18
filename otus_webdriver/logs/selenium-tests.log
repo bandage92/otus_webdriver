@@ -1,19 +1,90 @@
-2025-10-14 06:38:12.381 [main] INFO  HomeworkTest - WebDriver Manager настроен
-2025-10-14 06:38:13.783 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
-2025-10-14 06:38:14.091 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
-2025-10-14 06:38:14.095 [main] INFO  HomeworkTest - ТЕСТ: Открыть браузер в режиме полного экрана
-2025-10-14 06:38:14.140 [main] INFO  HomeworkTest - Окно открыто в максимальном размере
-2025-10-14 06:38:14.349 [main] INFO  HomeworkTest - Форма заполнена: имя='фыв', email='asdf@sdfg.rt'
-2025-10-14 06:38:14.412 [main] INFO  HomeworkTest - Форма отправлена
-2025-10-14 06:38:14.482 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Сообщение содержит ввёденные имя и email
-2025-10-14 06:38:15.706 [main] INFO  HomeworkTest - Драйвер запущен в headless режиме
-2025-10-14 06:38:15.971 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
-2025-10-14 06:38:15.972 [main] INFO  HomeworkTest - ТЕСТ: Открыть браузер в headless режиме
-2025-10-14 06:38:16.072 [main] INFO  HomeworkTest - Введен текст: 'ОТУС'
-2025-10-14 06:38:16.089 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Введенный текст 'ОТУС' соответствует отображаемому
-2025-10-14 06:38:17.079 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
-2025-10-14 06:38:17.357 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
-2025-10-14 06:38:17.358 [main] INFO  HomeworkTest - ТЕСТ: Открыть браузер в режиме киоска
-2025-10-14 06:38:17.465 [main] INFO  HomeworkTest - Окно открыто в режиме киоска
-2025-10-14 06:38:17.599 [main] INFO  HomeworkTest - Нажата кнопка открытия модального окна
-2025-10-14 06:38:17.609 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Стиль модального окна изменился после открытия
+2025-10-18 05:22:07.029 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+2025-10-18 05:22:07.318 [main] INFO  HomeworkTest - Окно открыто в максимальном размере
+2025-10-18 05:22:07.655 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:22:07.910 [main] INFO  HomeworkTest - Форма заполнена: имя='фыв', email='asdf@sdfg.rt'
+2025-10-18 05:22:08.006 [main] INFO  HomeworkTest - Форма отправлена
+2025-10-18 05:22:08.115 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Сообщение содержит ввёденные имя и email
+2025-10-18 05:22:11.914 [main] INFO  HomeworkTest - Драйвер запущен в headless режиме
+2025-10-18 05:22:12.324 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:22:12.463 [main] INFO  HomeworkTest - Введен текст: 'ОТУС'
+2025-10-18 05:22:12.483 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Введенный текст 'ОТУС' соответствует отображаемому
+2025-10-18 05:22:17.180 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+2025-10-18 05:22:17.476 [main] INFO  HomeworkTest - Окно открыто в режиме киоска
+2025-10-18 05:22:17.862 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:22:18.108 [main] INFO  HomeworkTest - Нажата кнопка открытия модального окна
+2025-10-18 05:22:18.118 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Стиль модального окна изменился после открытия
+2025-10-18 05:23:43.974 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+2025-10-18 05:23:44.284 [main] INFO  HomeworkTest - Окно открыто в максимальном размере
+2025-10-18 05:23:45.059 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:23:45.321 [main] INFO  HomeworkTest - Форма заполнена: имя='фыв', email='asdf@sdfg.rt'
+2025-10-18 05:23:45.405 [main] INFO  HomeworkTest - Форма отправлена
+2025-10-18 05:23:45.470 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Сообщение содержит ввёденные имя и email
+2025-10-18 05:23:49.501 [main] INFO  HomeworkTest - Драйвер запущен в headless режиме
+2025-10-18 05:23:49.788 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:23:49.969 [main] INFO  HomeworkTest - Введен текст: 'ОТУС'
+2025-10-18 05:23:49.993 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Введенный текст 'ОТУС' соответствует отображаемому
+2025-10-18 05:23:55.084 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+2025-10-18 05:23:55.398 [main] INFO  HomeworkTest - Окно открыто в режиме киоска
+2025-10-18 05:23:55.734 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:23:55.976 [main] INFO  HomeworkTest - Нажата кнопка открытия модального окна
+2025-10-18 05:23:55.989 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Стиль модального окна изменился после открытия
+2025-10-18 05:31:44.384 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+2025-10-18 05:31:44.673 [main] INFO  HomeworkTest - Окно открыто в максимальном размере
+2025-10-18 05:31:44.927 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:31:45.146 [main] INFO  HomeworkTest - Форма заполнена: имя='фыв', email='asdf@sdfg.rt'
+2025-10-18 05:31:45.282 [main] INFO  HomeworkTest - Форма отправлена
+2025-10-18 05:31:45.339 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Сообщение содержит ввёденные имя и email
+2025-10-18 05:31:49.166 [main] INFO  HomeworkTest - Драйвер запущен в headless режиме
+2025-10-18 05:31:49.502 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:31:49.640 [main] INFO  HomeworkTest - Введен текст: 'ОТУС'
+2025-10-18 05:31:49.654 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Введенный текст 'ОТУС' соответствует отображаемому
+2025-10-18 05:31:54.365 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+2025-10-18 05:31:54.638 [main] INFO  HomeworkTest - Окно открыто в режиме киоска
+2025-10-18 05:31:54.963 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:31:55.214 [main] INFO  HomeworkTest - Нажата кнопка открытия модального окна
+2025-10-18 05:31:55.227 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Стиль модального окна изменился после открытия
+2025-10-18 05:34:12.313 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+2025-10-18 05:34:12.648 [main] INFO  HomeworkTest - Окно открыто в максимальном размере
+2025-10-18 05:34:12.891 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:34:13.098 [main] INFO  HomeworkTest - Форма заполнена: имя='фыв', email='asdf@sdfg.rt'
+2025-10-18 05:34:13.173 [main] INFO  HomeworkTest - Форма отправлена
+2025-10-18 05:34:13.285 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Сообщение содержит ввёденные имя и email
+2025-10-18 05:34:17.107 [main] INFO  HomeworkTest - Драйвер запущен в headless режиме
+2025-10-18 05:34:17.400 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:34:17.597 [main] INFO  HomeworkTest - Введен текст: 'ОТУС'
+2025-10-18 05:34:17.619 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Введенный текст 'ОТУС' соответствует отображаемому
+2025-10-18 05:34:22.384 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+2025-10-18 05:34:22.674 [main] INFO  HomeworkTest - Окно открыто в режиме киоска
+2025-10-18 05:34:23.200 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+2025-10-18 05:34:23.409 [main] INFO  HomeworkTest - Нажата кнопка открытия модального окна
+2025-10-18 05:34:23.423 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Стиль модального окна изменился после открытия
+05:36:55.136 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+05:36:55.422 [main] INFO  HomeworkTest - Окно открыто в максимальном размере
+05:36:55.692 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+05:36:55.873 [main] INFO  HomeworkTest - Форма заполнена: имя='фыв', email='asdf@sdfg.rt'
+05:36:56.012 [main] INFO  HomeworkTest - Форма отправлена
+05:36:56.066 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Сообщение содержит ввёденные имя и email
+05:36:59.858 [main] INFO  HomeworkTest - Драйвер запущен в headless режиме
+05:37:00.141 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+05:37:00.293 [main] INFO  HomeworkTest - Введен текст: 'ОТУС'
+05:37:00.313 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Введенный текст 'ОТУС' соответствует отображаемому
+05:37:04.916 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+05:37:05.222 [main] INFO  HomeworkTest - Окно открыто в режиме киоска
+05:37:05.493 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+05:37:05.741 [main] INFO  HomeworkTest - Нажата кнопка открытия модального окна
+05:37:05.755 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Стиль модального окна изменился после открытия
+05:38:56.993 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+05:38:57.286 [main] INFO  HomeworkTest - Окно открыто в максимальном размере
+05:38:57.595 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+05:38:57.778 [main] INFO  HomeworkTest - Форма заполнена: имя='фыв', email='asdf@sdfg.rt'
+05:38:57.859 [main] INFO  HomeworkTest - Форма отправлена
+05:38:57.918 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Сообщение содержит ввёденные имя и email
+05:39:01.684 [main] INFO  HomeworkTest - Драйвер запущен в headless режиме
+05:39:02.003 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+05:39:02.145 [main] INFO  HomeworkTest - Введен текст: 'ОТУС'
+05:39:02.163 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Введенный текст 'ОТУС' соответствует отображаемому
+05:39:06.720 [main] INFO  HomeworkTest - Драйвер запущен в обычном режиме
+05:39:07.008 [main] INFO  HomeworkTest - Окно открыто в режиме киоска
+05:39:07.311 [main] INFO  HomeworkTest - Переход на страницу: https://otus.home.kartushin.su/training.html
+05:39:07.527 [main] INFO  HomeworkTest - Нажата кнопка открытия модального окна
+05:39:07.545 [main] INFO  HomeworkTest - ТЕСТ ПРОЙДЕН: Стиль модального окна изменился после открытия

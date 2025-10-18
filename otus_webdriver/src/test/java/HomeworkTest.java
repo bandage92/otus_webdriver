@@ -1,11 +1,13 @@
-import static data.BrowserTypeData.CHROME;
 import static factory.BrowserFactory.startBrowser;
 import static factory.BrowserFactory.startHeadlessBrowser;
 
+import annotations.Fullscreen;
+import annotations.Headless;
+import annotations.Kiosk;
+import data.BrowserTypeData;
 import java.lang.reflect.Method;
 import java.time.Duration;
 import java.util.Optional;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.*;
@@ -18,35 +20,55 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class HomeworkTest {
   
   private static final Logger LOGGER = LogManager.getLogger(HomeworkTest.class);
-  private static final String BASE_URL = "https://otus.home.kartushin.su/training.html";
+  private static final String BASE_URL =
+      System.getProperty("test.base.url", "https://otus.home.kartushin.su/training.html");
   private WebDriver driver;
   private WebDriverWait wait;
   
-  @BeforeAll
-  public static void driverSetup() {
-    WebDriverManager.chromedriver().setup();
-    LOGGER.info("WebDriver Manager настроен");
+  private static final BrowserTypeData BROWSER = getBrowserType();
+  
+  private static BrowserTypeData getBrowserType() {
+    String browserName = System.getProperty("browser", "CHROME");
+    try {
+      return BrowserTypeData.valueOf(browserName.toUpperCase());
+    } catch (IllegalArgumentException e) {
+      LOGGER.warn("Неизвестный браузер: {}. Использую CHROME", browserName);
+      return BrowserTypeData.CHROME;
+    }
   }
   
   @BeforeEach
   public void startDriver(TestInfo testInfo) {
     boolean isHeadless = false;
+    boolean isKiosk = false;
+    boolean isFullscreen = false;
     
     try {
       Optional<Method> testMethod = testInfo.getTestMethod();
       if (testMethod.isPresent()) {
         Method method = testMethod.get();
         isHeadless = method.isAnnotationPresent(Headless.class);
-        LOGGER.debug("Проверка аннотации Headless для метода {}: {}", method.getName(), isHeadless);
+        isKiosk = method.isAnnotationPresent(Kiosk.class);
+        isFullscreen = method.isAnnotationPresent(Fullscreen.class);
+        LOGGER.debug("Проверка аннотаций для метода {}: annotations.Headless={}, annotations.Kiosk={}, annotations.Fullscreen={}",
+            method.getName(), isHeadless, isKiosk, isFullscreen);
       }
     } catch (Exception e) {
-      LOGGER.warn("Ошибка при проверке аннотации Headless: {}", e.getMessage());
+      LOGGER.warn("Ошибка при проверке аннотаций: {}", e.getMessage());
     }
     
     driver = isHeadless
-        ? startHeadlessBrowser(CHROME) :
-        startBrowser(CHROME);
+        ? startHeadlessBrowser(BROWSER) :
+        startBrowser(BROWSER);
     LOGGER.info("Драйвер запущен в {} режиме", isHeadless ? "headless" : "обычном");
+    
+    if (isKiosk) {
+      driver.manage().window().fullscreen();
+      LOGGER.info("Окно открыто в режиме киоска");
+    } else if (isFullscreen) {
+      driver.manage().window().maximize();
+      LOGGER.info("Окно открыто в максимальном размере");
+    }
     
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -80,11 +102,9 @@ public class HomeworkTest {
   }
   
   @Test
+  @Kiosk
   @DisplayName("Открыть браузер в режиме киоска")
   public void kioskView() {
-    driver.manage().window().fullscreen();
-    LOGGER.info("Окно открыто в режиме киоска");
-    
     WebElement modalButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("openModalBtn")));
     WebElement modalWindow = driver.findElement(By.id("myModal"));
     
@@ -100,11 +120,9 @@ public class HomeworkTest {
   }
   
   @Test
+  @Fullscreen
   @DisplayName("Открыть браузер в режиме полного экрана")
   public void maximizeView() {
-    driver.manage().window().maximize();
-    LOGGER.info("Окно открыто в максимальном размере");
-    
     String testName = "фыв";
     String testEmail = "asdf@sdfg.rt";
     
